@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='2' height='2'><rect width='2' height='2' fill='white'/></svg>"
+      type="image/svg+xml"
+    />
+    <title>White Page</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: white;
+      }
+      button {
+        padding: 1.5rem;
+        font-size: 2rem;
+        border: 0.2rem solid black;
+        background: white;
+        cursor: pointer;
+      }
+      button:hover {
+        background: black;
+        color: white;
+      }
+      :fullscreen button {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="document.documentElement.requestFullscreen()">
+      Fullscreen
+    </button>
+  </body>
+</html>
